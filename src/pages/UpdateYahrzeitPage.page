@@ -1,0 +1,7 @@
+<apex:page standardController="Deceased__c" extensions="UpdateYahrzeitController" action="{!autoRun}">
+
+<!-- controller="UpdateYahrzeitController"> -->
+	<apex:pageBlock title="Congratulations">
+		
+    </apex:pageBlock>
+</apex:page>

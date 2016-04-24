@@ -1,0 +1,9 @@
+<apex:page standardController="Deceased__c" recordSetVar="deceased" extensions="UpdateYahrzeitController" action="{!autoRun}">
+
+<!-- controller="UpdateYahrzeitController"> -->
+	<apex:pageBlock title="">
+	Yahrzeit updated. For Hebrew observed, it's for the Hebrew year
+	starting in September/October. For Gregorian calendar, it's 
+	starting September 1st.		
+    </apex:pageBlock>
+</apex:page>

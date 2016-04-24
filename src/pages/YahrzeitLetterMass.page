@@ -1,0 +1,42 @@
+<apex:page standardController="Deceased__c" recordSetVar="objs" extensions="UpdateYahrzeitController" renderAs="pdf"
+           standardStylesheets="false" showHeader="false" sidebar="false"
+           applyBodyTag="false" applyHtmlTag="false">
+    
+    <html>
+        <head>
+            
+            <style>
+                @page {
+                size: letter;
+                margin-left: 1in;
+                margin-top: 1in;
+                margin-right: 0.5in;
+                margin-bottom: 1in;
+                @top-center {
+                }
+                @bottom-center {
+                }
+                }
+                .page-break {
+                display:block;
+                page-break-after:always;
+                }
+                body {
+                font-family: Arial Unicode MS;
+                }
+            </style>
+        </head>
+        <body>
+     		      
+            <apex:variable var="page" value="{!1}" /> 
+            <apex:repeat value="{!objs}" var="d">
+                <apex:outputtext escape="false" value="{!d.MergeField_Letter__c}"/>
+                <div style="{!if(page < objsSize, 'page-break-before:always;','page-break-before:avoid;')}"/>
+     			<apex:variable var="page" value="{!page+1}"/>
+            </apex:repeat>   
+			
+
+        </body>
+    </html>    
+    
+</apex:page>

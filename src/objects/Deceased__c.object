@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>Gregorian_date</fullName>
+        <description>For secular date of death.</description>
+        <displayedFields>
+            <field>Day_Gregorian__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Month_Gregorian__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Year_Gregorian__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Gregorian date</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Hebrew_date</fullName>
+        <description>For storing a Hebrew date of death.</description>
+        <displayedFields>
+            <field>Day_Hebrew__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Month_Hebrew__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Year_Hebrew__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Hebrew date</label>
+    </fieldSets>
+    <fields>
+        <fullName>After_Sunset__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the time of death was after sunset. If observing the Hebrew date of death, it would change the remembrance date to the following day on the Jewish calendar.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the time of death was after sunset. If observing the Hebrew date of death, it would change the remembrance date to the following day on the Jewish calendar.</inlineHelpText>
+        <label>After Sunset?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Day_Gregorian__c</fullName>
+        <externalId>false</externalId>
+        <label>Day (Gregorian)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>16</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>17</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>18</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>19</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>21</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>22</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>23</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>24</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>25</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>26</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>27</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>28</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>29</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>30</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>31</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Day_Hebrew__c</fullName>
+        <externalId>false</externalId>
+        <label>Day (Hebrew)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>16</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>17</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>18</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>19</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>21</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>22</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>23</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>24</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>25</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>26</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>27</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>28</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>29</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>30</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Friday_of_observance__c</fullName>
+        <description>The Friday on or following the date of observance, when the name will be read in the synagogue.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Friday on or following the date of observance, when the name will be read in the synagogue.</inlineHelpText>
+        <label>Friday of observance</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Gregorian_Letter__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;The Yahrzeit for &quot; &amp; MergeField_RelativeFirstName__c &amp; &quot; is observed on &quot; &amp; MergeField_YahrtzeitDateFormatted__c &amp; &quot; according to the Gregorian calendar. Please contact me if you prefer to be notified of Yahrzeit dates according to the Jewish calendar.&quot; &amp; BR() &amp;
+&quot;I encourage you to observe Yahrzeit in these customary ways: &quot; &amp;
+&quot;&lt;ul&gt;&lt;li&gt;Light a Yahrzeit candle on the evening preceding the date of the Yahrzeit. Yahrzeit candles are available through the temple.&quot; &amp; 
+&quot;&lt;/li&gt;&lt;li&gt;Attend worship services to say Kaddish on the Shabbat following the Yahrzeit, which will take place on &quot; &amp; TEXT(Friday_of_observance__c) &amp; &quot; at 8:00 pm (7:30 pm on third Friday of the month)&quot; &amp; 
+&quot;&lt;/li&gt;&lt;li&gt;Sponsor the Oneg Shabbat at Congregation Beth Emek on the date when Kaddish will be read.&quot; &amp; 
+&quot;&lt;/li&gt;&lt;li&gt;Make a contribution to the congregation in memory of your loved one.&lt;/li&gt;&lt;/ul&gt;&quot; &amp; BR() &amp;
+&quot;I hope that the memory of your loved one will inspire you to continue to grow in good deeds and holiness.&quot; &amp; BR() &amp; BR() &amp; 
+&quot;L’shalom,&quot; &amp; BR() &amp; BR() &amp; 
+&quot;Rabbi Laurence Elis Milder, Ph.D.&quot;</formula>
+        <label>Gregorian Letter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Had_been_member__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Had been member?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hebrew_date_observed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Yahrzeit observed based on Hebrew date? If so, mark checked. If it&apos;s observed by the Gregorian date, leave unchecked.</inlineHelpText>
+        <label>Hebrew date observed</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Household__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Household</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Yahrzeits</relationshipLabel>
+        <relationshipName>Household</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MergeField_Letter__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Dear &quot; &amp; MergeField_RelativeFirstName__c &amp; &quot;,&lt;br/&gt;&lt;br/&gt;&quot; &amp;
+&quot;The Yahrzeit for &quot; &amp; Name &amp; &quot; is observed on &quot; &amp; 
+IF(Hebrew_date_observed__c,  TEXT(Day_Hebrew__c) &amp; &quot; &quot; &amp;  TEXT(Month_Hebrew__c) &amp; &quot; according to the Jewish calendar, which occurs this year on &quot; &amp; MergeField_YahrtzeitDateFormatted__c &amp; &quot;.&quot;, MergeField_YahrtzeitDateFormatted__c &amp; &quot; according to the Gregorian calendar. Please contact me if you prefer to be notified of Yahrzeit dates according to the Jewish calendar.&quot;) &amp; 
+&quot;&lt;br/&gt;&lt;br/&gt;I encourage you to observe Yahrzeit in these customary ways:&quot; &amp; 
+&quot;&lt;ul&gt;&lt;li&gt;Light a Yahrzeit candle on the evening preceding the date of the Yahrzeit. Yahrzeit candles are available through the temple.&lt;/li&gt;&lt;li&gt;Attend worship services to say Kaddish on the Shabbat following the Yahrzeit, which will take place on &quot; &amp; 
+CASE( MONTH(Friday_of_observance__c),
+1, &quot;January&quot;,
+2, &quot;February&quot;,
+3, &quot;March&quot;,
+4, &quot;April&quot;,
+5, &quot;May&quot;,
+6, &quot;June&quot;,
+7, &quot;July&quot;,
+8, &quot;August&quot;,
+9, &quot;September&quot;,
+10, &quot;October&quot;,
+11, &quot;November&quot;,
+&quot;December&quot;) &amp; &quot; &quot; &amp; TEXT(DAY( Friday_of_observance__c )) &amp; 
+&quot; at 8:00 pm (7:30 pm on third Friday of the month)&lt;/li&gt;&lt;li&gt;Sponsor the Oneg Shabbat at Congregation Beth Emek on the date when Kaddish will be read.&lt;/li&gt;&lt;li&gt;Make a contribution to the congregation in memory of your loved one.&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;I hope that the memory of your loved one will inspire you to continue to grow in good deeds and holiness.&lt;br/&gt;&lt;br/&gt;L’shalom,&lt;br/&gt;&lt;br/&gt;Rabbi Laurence Elis Milder, Ph.D.&quot;</formula>
+        <label>MergeField_Letter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MergeField_RelativeFirstName__c</fullName>
+        <description>First name of relative of deceased (used as merge field for the letter)</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Related_to_contact__r.Nickname__c,  Related_to_contact__r.FirstName )</formula>
+        <label>MergeField_RelativeFirstName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MergeField_YahrtzeitDateFormatted__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+  MONTH(  Yahrzeit_this_year__c  ),
+  1, &quot;January&quot;,
+  2, &quot;February&quot;,
+  3, &quot;March&quot;,
+  4, &quot;April&quot;,
+  5, &quot;May&quot;,
+  6, &quot;June&quot;,
+  7, &quot;July&quot;,
+  8, &quot;August&quot;,
+  9, &quot;September&quot;,
+  10, &quot;October&quot;,
+  11, &quot;November&quot;,
+  &quot;December&quot;)  &amp;  &quot; &quot; &amp; TEXT(DAY(Yahrzeit_this_year__c)) &amp; &quot;, &quot; &amp;  TEXT(YEAR( Yahrzeit_this_year__c ))</formula>
+        <label>MergeField_YahrtzeitDateFormatted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month_Gregorian__c</fullName>
+        <externalId>false</externalId>
+        <label>Month (Gregorian)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Month_Hebrew__c</fullName>
+        <externalId>false</externalId>
+        <label>Month (Hebrew)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tishrei</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cheshvan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kislev</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tevet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shvat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adar I</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adar II</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nisan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Iyyar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sivan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tamuz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Av</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elul</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name_Pronounciation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How do we pronounce the name of the deceased?</inlineHelpText>
+        <label>Name Pronounciation</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Memorial_Board__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this person listed on the memorial board in the sanctuary?</inlineHelpText>
+        <label>On Memorial Board</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Position_On_Memorial_Board_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Position on Memorial Board</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_to_contact_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Another relation, if exists</description>
+        <externalId>false</externalId>
+        <label>Related to contact 2</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Yahrzeits (Related to contact 2)</relationshipLabel>
+        <relationshipName>Yahrzeits</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_to_contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related to contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Yahrzeit</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Relation_to_contact_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Relation to contact 2</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relation_to_contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Relation to contact</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Yahrzeit_this_year__c</fullName>
+        <description>The Gregorian date in which yahrzeit is noted this year.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This date is calculated around July or August in advance of the coming year. For those observed on Hebrew date, &quot;this year&quot; refers to the Jewish year that starts in Sep/Oct. For those who observe Gregorian, we look at September through August.</inlineHelpText>
+        <label>Next observance date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Year_Gregorian__c</fullName>
+        <externalId>false</externalId>
+        <label>Year (Gregorian)</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year_Hebrew__c</fullName>
+        <externalId>false</externalId>
+        <label>Year (Hebrew)</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Yahrzeit</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Household__c</columns>
+        <columns>Yahrzeit_this_year__c</columns>
+        <columns>Month_Gregorian__c</columns>
+        <columns>Day_Gregorian__c</columns>
+        <columns>Year_Gregorian__c</columns>
+        <columns>Hebrew_date_observed__c</columns>
+        <columns>Month_Hebrew__c</columns>
+        <columns>Day_Hebrew__c</columns>
+        <columns>Year_Hebrew__c</columns>
+        <columns>On_Memorial_Board__c</columns>
+        <columns>Related_to_contact__c</columns>
+        <columns>Related_to_contact_2__c</columns>
+        <columns>Relation_to_contact__c</columns>
+        <columns>Relation_to_contact_2__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Gregorian_Dates_ascending</fullName>
+        <columns>NAME</columns>
+        <columns>Yahrzeit_this_year__c</columns>
+        <columns>Month_Hebrew__c</columns>
+        <columns>Day_Hebrew__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Hebrew_date_observed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Month_Gregorian__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Day_Gregorian__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Year_Gregorian__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Gregorian date observed</label>
+    </listViews>
+    <listViews>
+        <fullName>Yahrzeit_Dates_ascending</fullName>
+        <columns>NAME</columns>
+        <columns>Yahrzeit_this_year__c</columns>
+        <columns>Month_Hebrew__c</columns>
+        <columns>Day_Hebrew__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Hebrew_date_observed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Hebrew date observed</label>
+    </listViews>
+    <listViews>
+        <fullName>Yahrzeits_next_month</fullName>
+        <columns>NAME</columns>
+        <columns>Household__c</columns>
+        <columns>Yahrzeit_this_year__c</columns>
+        <columns>Month_Gregorian__c</columns>
+        <columns>Day_Gregorian__c</columns>
+        <columns>Year_Gregorian__c</columns>
+        <columns>Hebrew_date_observed__c</columns>
+        <columns>Month_Hebrew__c</columns>
+        <columns>Day_Hebrew__c</columns>
+        <columns>Year_Hebrew__c</columns>
+        <columns>On_Memorial_Board__c</columns>
+        <columns>Related_to_contact__c</columns>
+        <columns>Related_to_contact_2__c</columns>
+        <columns>Relation_to_contact__c</columns>
+        <columns>Relation_to_contact_2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Yahrzeit_this_year__c</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Yahrzeits next month</label>
+    </listViews>
+    <listViews>
+        <fullName>Yahrzeits_this_month</fullName>
+        <columns>NAME</columns>
+        <columns>Household__c</columns>
+        <columns>Yahrzeit_this_year__c</columns>
+        <columns>Month_Gregorian__c</columns>
+        <columns>Day_Gregorian__c</columns>
+        <columns>Year_Gregorian__c</columns>
+        <columns>Hebrew_date_observed__c</columns>
+        <columns>Month_Hebrew__c</columns>
+        <columns>Day_Hebrew__c</columns>
+        <columns>Year_Hebrew__c</columns>
+        <columns>On_Memorial_Board__c</columns>
+        <columns>Related_to_contact__c</columns>
+        <columns>Related_to_contact_2__c</columns>
+        <columns>Relation_to_contact__c</columns>
+        <columns>Relation_to_contact_2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Yahrzeit_this_year__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Yahrzeits this month</label>
+    </listViews>
+    <nameField>
+        <label>Deceased Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Yahrzeits</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Related_to_contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Relation_to_contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Household__c</customTabListAdditionalFields>
+        <listViewButtons>Update_Yahrzeit_Dates_for_List</listViewButtons>
+        <listViewButtons>Yahrzeit_Letter_for_List</listViewButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Either_Hebrew_or_Gregorian_not_both</fullName>
+        <active>false</active>
+        <errorConditionFormula>OR(
+AND(NOT(ISPICKVAL( Day_Gregorian__c, &quot;&quot;)) , NOT(ISPICKVAL( Day_Hebrew__c, &quot;&quot;))),
+AND(NOT(ISBLANK(  Year_Gregorian__c )) , NOT(ISBLANK(  Year_Hebrew__c ))))</errorConditionFormula>
+        <errorMessage>Fill in either Hebrew or Gregorian date, not both.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Gregorian_year_in_range</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(ISBLANK(  Year_Gregorian__c ) , FALSE, 
+
+OR (VALUE(Year_Gregorian__c ) &lt; 1800, VALUE(Year_Gregorian__c ) &gt; 2100 ))</errorConditionFormula>
+        <errorDisplayField>Year_Gregorian__c</errorDisplayField>
+        <errorMessage>Gregorian year must be between 1800 and 2100.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Gregorian_year_is_number</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (ISBLANK(  Year_Gregorian__c ) , FALSE, NOT(ISNUMBER(Year_Gregorian__c  )))</errorConditionFormula>
+        <errorDisplayField>Year_Gregorian__c</errorDisplayField>
+        <errorMessage>You must enter a valid year</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hebrew_year_in_range</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(ISBLANK(  Year_Hebrew__c ) , FALSE, 
+
+OR (VALUE(Year_Hebrew__c ) &lt; 5000, VALUE(Year_Hebrew__c ) &gt; 6000 ))</errorConditionFormula>
+        <errorDisplayField>Year_Hebrew__c</errorDisplayField>
+        <errorMessage>Hebrew year must be between 5000 and 6000</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hebrew_year_is_number</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(ISBLANK(  Year_Hebrew__c ) , FALSE, NOT(ISNUMBER(Year_Hebrew__c  )))</errorConditionFormula>
+        <errorDisplayField>Year_Hebrew__c</errorDisplayField>
+        <errorMessage>You must enter a number for Hebrew year</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>If_Gregorian_then_day_and_month</fullName>
+        <active>false</active>
+        <errorConditionFormula>OR(  AND(NOT(ISPICKVAL( Day_Gregorian__c, &quot;&quot;)) , ISPICKVAL ( Month_Gregorian__c , &quot;&quot;)),
+         AND(NOT(ISPICKVAL( Month_Gregorian__c, &quot;&quot;)) , ISPICKVAL ( Day_Gregorian__c , &quot;&quot;)))</errorConditionFormula>
+        <errorMessage>If using Gregorian date, must fill both day and month.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>If_Hebrew_then_day_and_month</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(  AND(NOT(ISPICKVAL( Day_Hebrew__c, &quot;&quot;)) , ISPICKVAL ( Month_Hebrew__c , &quot;&quot;)),
+         AND(NOT(ISPICKVAL( Month_Hebrew__c, &quot;&quot;)) , ISPICKVAL ( Day_Hebrew__c , &quot;&quot;)))</errorConditionFormula>
+        <errorMessage>If using Hebrew date, must fill both day and month.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Update_Yahrzeit_Dates</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Update Yahrzeit Dates</masterLabel>
+        <openType>sidebar</openType>
+        <page>UpdateYahrzeitPage</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Update_Yahrzeit_Dates_for_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Update Yahrzeit Dates for List</masterLabel>
+        <openType>sidebar</openType>
+        <page>UpdateYahrzeitListPage</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Yahrzeit_Letter</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Yahrzeit Letter</masterLabel>
+        <openType>newWindow</openType>
+        <page>YahrzeitLetter</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>Yahrzeit_Letter_for_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Yahrzeit Letter for List</masterLabel>
+        <openType>replace</openType>
+        <page>YahrzeitLetterMass</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>
