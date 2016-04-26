@@ -1,4 +1,4 @@
-public class UpdateYahrzeitController {
+public with sharing class UpdateYahrzeitController {
 
 	// Constructor - this only really matters if the autoRun function doesn't work right
     public List<Deceased__c> objs {get; set;}

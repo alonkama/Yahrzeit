@@ -7,11 +7,11 @@ global with sharing class Yahrzeit {
 	// See http://boards.developerforce.com/t5/Apex-Code-Development/Error-while-saving-external-web-service-response-to-salesforce/td-p/79560
 	public static void updateYahrzeitForDeceased(List<Deceased__c> deceasedList) {
 		// separated because the trigger needs to call the logic but not do the update.
-        calculateHebrewDateAndFridayOfObservance(deceasedList);
+        deceasedList = calculateHebrewDateAndFridayOfObservance(deceasedList);
         update deceasedList;
 	}
     
-    public static void calculateHebrewDateAndFridayOfObservance(List<Deceased__c> deceasedList) {
+    private static List<Deceased__c> calculateHebrewDateAndFridayOfObservance(List<Deceased__c> deceasedList) {
 		for (Deceased__c d : deceasedList) {
             
             // If Hebrew date is not filled in, fetch the values
@@ -29,6 +29,8 @@ global with sharing class Yahrzeit {
             Date fridayOfObservance = getFridayOfObservance(dateForThisYear);
             d.Friday_of_observance__c = fridayOfObservance;
 		}
+        
+        return deceasedList;
 
     
     }
