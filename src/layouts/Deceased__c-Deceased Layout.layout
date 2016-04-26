@@ -37,10 +37,6 @@
                 <behavior>Edit</behavior>
                 <field>Relation_to_contact_2__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Gregorian_Letter__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -384,25 +384,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Gregorian_Letter__c</fullName>
-        <externalId>false</externalId>
-        <formula>&quot;The Yahrzeit for &quot; &amp; MergeField_RelativeFirstName__c &amp; &quot; is observed on &quot; &amp; MergeField_YahrtzeitDateFormatted__c &amp; &quot; according to the Gregorian calendar. Please contact me if you prefer to be notified of Yahrzeit dates according to the Jewish calendar.&quot; &amp; BR() &amp;
-&quot;I encourage you to observe Yahrzeit in these customary ways: &quot; &amp;
-&quot;&lt;ul&gt;&lt;li&gt;Light a Yahrzeit candle on the evening preceding the date of the Yahrzeit. Yahrzeit candles are available through the temple.&quot; &amp; 
-&quot;&lt;/li&gt;&lt;li&gt;Attend worship services to say Kaddish on the Shabbat following the Yahrzeit, which will take place on &quot; &amp; TEXT(Friday_of_observance__c) &amp; &quot; at 8:00 pm (7:30 pm on third Friday of the month)&quot; &amp; 
-&quot;&lt;/li&gt;&lt;li&gt;Sponsor the Oneg Shabbat at Congregation Beth Emek on the date when Kaddish will be read.&quot; &amp; 
-&quot;&lt;/li&gt;&lt;li&gt;Make a contribution to the congregation in memory of your loved one.&lt;/li&gt;&lt;/ul&gt;&quot; &amp; BR() &amp;
-&quot;I hope that the memory of your loved one will inspire you to continue to grow in good deeds and holiness.&quot; &amp; BR() &amp; BR() &amp; 
-&quot;L’shalom,&quot; &amp; BR() &amp; BR() &amp; 
-&quot;Rabbi Laurence Elis Milder, Ph.D.&quot;</formula>
-        <label>Gregorian Letter</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Had_been_member__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -745,13 +726,11 @@ CASE( MONTH(Friday_of_observance__c),
         <columns>NAME</columns>
         <columns>Household__c</columns>
         <columns>Yahrzeit_this_year__c</columns>
+        <columns>Friday_of_observance__c</columns>
+        <columns>Hebrew_date_observed__c</columns>
         <columns>Month_Gregorian__c</columns>
         <columns>Day_Gregorian__c</columns>
         <columns>Year_Gregorian__c</columns>
-        <columns>Hebrew_date_observed__c</columns>
-        <columns>Month_Hebrew__c</columns>
-        <columns>Day_Hebrew__c</columns>
-        <columns>Year_Hebrew__c</columns>
         <columns>On_Memorial_Board__c</columns>
         <columns>Related_to_contact__c</columns>
         <columns>Related_to_contact_2__c</columns>

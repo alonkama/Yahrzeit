@@ -4,10 +4,8 @@
     <packageType>UNMANAGED</packageType>
     <types>
         <members>HebcalHttpCalloutMockImpl</members>
-        <members>TestTriggerYahrzeit</members>
         <members>UpdateYahrzeitController</members>
         <members>Yahrzeit</members>
-        <members>YahrzeitLetterController</members>
         <members>YahrzeitTestSuite</members>
         <name>ApexClass</name>
     </types>
@@ -28,7 +26,6 @@
         <members>Deceased__c.Day_Gregorian__c</members>
         <members>Deceased__c.Day_Hebrew__c</members>
         <members>Deceased__c.Friday_of_observance__c</members>
-        <members>Deceased__c.Gregorian_Letter__c</members>
         <members>Deceased__c.Had_been_member__c</members>
         <members>Deceased__c.Hebrew_date_observed__c</members>
         <members>Deceased__c.Household__c</members>
