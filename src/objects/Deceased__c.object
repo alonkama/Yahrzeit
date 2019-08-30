@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -110,267 +106,273 @@
         <fullName>Day_Gregorian__c</fullName>
         <externalId>false</externalId>
         <label>Day (Gregorian)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>7</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>8</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>9</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>11</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>12</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>13</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>14</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>15</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>16</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>17</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>18</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>19</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>21</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>22</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>23</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>24</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>25</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>26</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>27</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>28</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>29</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>31</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
+        <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>24</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>26</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>27</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>28</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>29</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>31</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Day_Hebrew__c</fullName>
         <externalId>false</externalId>
         <label>Day (Hebrew)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>7</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>8</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>9</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>11</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>12</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>13</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>14</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>15</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>16</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>17</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>18</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>19</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>20</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>21</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>22</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>23</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>24</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>25</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>26</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>27</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>28</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>29</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>30</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
+        <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>24</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>26</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>27</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>28</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>29</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Friday_of_observance__c</fullName>
@@ -382,6 +384,25 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Gregorian_Letter__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;The Yahrzeit for &quot; &amp; MergeField_RelativeFirstName__c &amp; &quot; is observed on &quot; &amp; MergeField_YahrtzeitDateFormatted__c &amp; &quot; according to the Gregorian calendar. Please contact me if you prefer to be notified of Yahrzeit dates according to the Jewish calendar.&quot; &amp; BR() &amp;
+&quot;I encourage you to observe Yahrzeit in these customary ways: &quot; &amp;
+&quot;&lt;ul&gt;&lt;li&gt;Light a Yahrzeit candle on the evening preceding the date of the Yahrzeit. Yahrzeit candles are available through the temple.&quot; &amp; 
+&quot;&lt;/li&gt;&lt;li&gt;Attend worship services to say Kaddish on the Shabbat of, or the Shabbat following, the Yahrzeit, which will take place on &quot; &amp; TEXT(Friday_of_observance__c) &amp; &quot; at 8:00 pm (7:30 pm on third Friday of the month)&quot; &amp; 
+&quot;&lt;/li&gt;&lt;li&gt;Sponsor the Oneg Shabbat at Congregation Beth Emek on the date when Kaddish will be read.&quot; &amp; 
+&quot;&lt;/li&gt;&lt;li&gt;Make a contribution to the congregation in memory of your loved one.&lt;/li&gt;&lt;/ul&gt;&quot; &amp; BR() &amp;
+&quot;I hope that the memory of your loved one will inspire you to continue to grow in good deeds and holiness.&quot; &amp; BR() &amp; BR() &amp; 
+&quot;L’shalom,&quot; &amp; BR() &amp; BR() &amp; 
+&quot;Rabbi Laurence Elis Milder, Ph.D.&quot;</formula>
+        <label>Gregorian Letter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Had_been_member__c</fullName>
@@ -422,7 +443,7 @@
 &quot;The Yahrzeit for &quot; &amp; Name &amp; &quot; is observed on &quot; &amp; 
 IF(Hebrew_date_observed__c,  TEXT(Day_Hebrew__c) &amp; &quot; &quot; &amp;  TEXT(Month_Hebrew__c) &amp; &quot; according to the Jewish calendar, which occurs this year on &quot; &amp; MergeField_YahrtzeitDateFormatted__c &amp; &quot;.&quot;, MergeField_YahrtzeitDateFormatted__c &amp; &quot; according to the Gregorian calendar. Please contact me if you prefer to be notified of Yahrzeit dates according to the Jewish calendar.&quot;) &amp; 
 &quot;&lt;br/&gt;&lt;br/&gt;I encourage you to observe Yahrzeit in these customary ways:&quot; &amp; 
-&quot;&lt;ul&gt;&lt;li&gt;Light a Yahrzeit candle on the evening preceding the date of the Yahrzeit. Yahrzeit candles are available through the temple.&lt;/li&gt;&lt;li&gt;Attend worship services to say Kaddish on the Shabbat following the Yahrzeit, which will take place on &quot; &amp; 
+&quot;&lt;ul&gt;&lt;li style=\&quot;margin: 14px 0;\&quot;&gt;Light a Yahrzeit candle on the evening preceding the date of the Yahrzeit. Yahrzeit candles are available through the temple.&lt;/li&gt;&lt;li style=\&quot;margin: 14px 0;\&quot;&gt;Attend worship services to say Kaddish on the Shabbat of, or the Shabbat following, the Yahrzeit, which will take place on &quot; &amp; 
 CASE( MONTH(Friday_of_observance__c),
 1, &quot;January&quot;,
 2, &quot;February&quot;,
@@ -436,7 +457,7 @@ CASE( MONTH(Friday_of_observance__c),
 10, &quot;October&quot;,
 11, &quot;November&quot;,
 &quot;December&quot;) &amp; &quot; &quot; &amp; TEXT(DAY( Friday_of_observance__c )) &amp; 
-&quot; at 8:00 pm (7:30 pm on third Friday of the month)&lt;/li&gt;&lt;li&gt;Sponsor the Oneg Shabbat at Congregation Beth Emek on the date when Kaddish will be read.&lt;/li&gt;&lt;li&gt;Make a contribution to the congregation in memory of your loved one.&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;I hope that the memory of your loved one will inspire you to continue to grow in good deeds and holiness.&lt;br/&gt;&lt;br/&gt;L’shalom,&lt;br/&gt;&lt;br/&gt;Rabbi Laurence Elis Milder, Ph.D.&quot;</formula>
+&quot; at 8:00 pm.&lt;/li&gt;&lt;li style=\&quot;margin: 14px 0;\&quot;&gt;Sponsor the Oneg Shabbat at Congregation Beth Emek on the date when Kaddish will be read.&lt;/li&gt;&lt;li style=\&quot;margin: 14px 0;\&quot;&gt;Make a contribution to the congregation in memory of your loved one. Online donations can be made at &lt;a href=\&quot;http://www.bethemek.org/donate\&quot;&gt;www.bethemek.org/donate&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;I hope that the memory of your loved one will inspire you to continue to grow in good deeds and holiness.&lt;br/&gt;&lt;br/&gt;L’shalom,&lt;br/&gt;&lt;br/&gt;Rabbi Laurence Elis Milder, Ph.D.&quot;</formula>
         <label>MergeField_Letter</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -484,127 +505,133 @@ CASE( MONTH(Friday_of_observance__c),
         <fullName>Month_Gregorian__c</fullName>
         <externalId>false</externalId>
         <label>Month (Gregorian)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>7</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>8</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>9</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>10</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>11</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>12</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
+        <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Month_Hebrew__c</fullName>
         <externalId>false</externalId>
         <label>Month (Hebrew)</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Tishrei</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cheshvan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Kislev</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tevet</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Shvat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Adar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Adar I</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Adar II</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nisan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Iyyar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sivan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tamuz</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Av</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Elul</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
+        <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Tishrei</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cheshvan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kislev</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tevet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shvat</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adar I</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adar II</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nisan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Iyyar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sivan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tamuz</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Av</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Elul</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Name_Pronounciation__c</fullName>
@@ -725,23 +752,25 @@ CASE( MONTH(Friday_of_observance__c),
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Household__c</columns>
-        <columns>Yahrzeit_this_year__c</columns>
         <columns>Friday_of_observance__c</columns>
-        <columns>Hebrew_date_observed__c</columns>
+        <columns>Yahrzeit_this_year__c</columns>
         <columns>Month_Gregorian__c</columns>
         <columns>Day_Gregorian__c</columns>
         <columns>Year_Gregorian__c</columns>
+        <columns>Hebrew_date_observed__c</columns>
+        <columns>Month_Hebrew__c</columns>
+        <columns>Day_Hebrew__c</columns>
+        <columns>Year_Hebrew__c</columns>
         <columns>On_Memorial_Board__c</columns>
         <columns>Related_to_contact__c</columns>
         <columns>Related_to_contact_2__c</columns>
-        <columns>Relation_to_contact__c</columns>
-        <columns>Relation_to_contact_2__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <listViews>
         <fullName>Gregorian_Dates_ascending</fullName>
         <columns>NAME</columns>
+        <columns>Friday_of_observance__c</columns>
         <columns>Yahrzeit_this_year__c</columns>
         <columns>Month_Hebrew__c</columns>
         <columns>Day_Hebrew__c</columns>
@@ -768,6 +797,7 @@ CASE( MONTH(Friday_of_observance__c),
     <listViews>
         <fullName>Yahrzeit_Dates_ascending</fullName>
         <columns>NAME</columns>
+        <columns>Friday_of_observance__c</columns>
         <columns>Yahrzeit_this_year__c</columns>
         <columns>Month_Hebrew__c</columns>
         <columns>Day_Hebrew__c</columns>
@@ -778,56 +808,6 @@ CASE( MONTH(Friday_of_observance__c),
             <value>1</value>
         </filters>
         <label>Hebrew date observed</label>
-    </listViews>
-    <listViews>
-        <fullName>Yahrzeits_next_month</fullName>
-        <columns>NAME</columns>
-        <columns>Household__c</columns>
-        <columns>Yahrzeit_this_year__c</columns>
-        <columns>Month_Gregorian__c</columns>
-        <columns>Day_Gregorian__c</columns>
-        <columns>Year_Gregorian__c</columns>
-        <columns>Hebrew_date_observed__c</columns>
-        <columns>Month_Hebrew__c</columns>
-        <columns>Day_Hebrew__c</columns>
-        <columns>Year_Hebrew__c</columns>
-        <columns>On_Memorial_Board__c</columns>
-        <columns>Related_to_contact__c</columns>
-        <columns>Related_to_contact_2__c</columns>
-        <columns>Relation_to_contact__c</columns>
-        <columns>Relation_to_contact_2__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Yahrzeit_this_year__c</field>
-            <operation>equals</operation>
-            <value>NEXT_MONTH</value>
-        </filters>
-        <label>Yahrzeits next month</label>
-    </listViews>
-    <listViews>
-        <fullName>Yahrzeits_this_month</fullName>
-        <columns>NAME</columns>
-        <columns>Household__c</columns>
-        <columns>Yahrzeit_this_year__c</columns>
-        <columns>Month_Gregorian__c</columns>
-        <columns>Day_Gregorian__c</columns>
-        <columns>Year_Gregorian__c</columns>
-        <columns>Hebrew_date_observed__c</columns>
-        <columns>Month_Hebrew__c</columns>
-        <columns>Day_Hebrew__c</columns>
-        <columns>Year_Hebrew__c</columns>
-        <columns>On_Memorial_Board__c</columns>
-        <columns>Related_to_contact__c</columns>
-        <columns>Related_to_contact_2__c</columns>
-        <columns>Relation_to_contact__c</columns>
-        <columns>Relation_to_contact_2__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Yahrzeit_this_year__c</field>
-            <operation>equals</operation>
-            <value>THIS_MONTH</value>
-        </filters>
-        <label>Yahrzeits this month</label>
     </listViews>
     <nameField>
         <label>Deceased Name</label>

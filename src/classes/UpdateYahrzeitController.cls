@@ -25,7 +25,7 @@ public with sharing class UpdateYahrzeitController {
         objs = getDetailsByIds(ids);
     }
     
-    private List<Deceased__c> getDetailsByIds(List<Id> ids) {
+    private static List<Deceased__c> getDetailsByIds(List<Id> ids) {
         return [SELECT Id, Name, Hebrew_date_observed__c, After_Sunset__c, Yahrzeit_this_year__c,
             Day_Hebrew__c, Month_Hebrew__c, Year_Hebrew__c, MergeField_Letter__c,
             Day_Gregorian__c, Month_Gregorian__c, Year_Gregorian__c FROM Deceased__c 
@@ -49,5 +49,14 @@ public with sharing class UpdateYahrzeitController {
         }
  		return null; //ApexPages.currentPage();
     }    
+    
+    @AuraEnabled
+    public static Deceased__c updateYahrzeit(Id deceasedId) {
+        List<Id> dlist = new List<Id>();
+        dlist.add(deceasedId);
+        
+        List<Deceased__c> ret = Yahrzeit.updateYahrzeitForDeceased(getDetailsByIds(dlist));
+        return ret.get(0);
+    }
 
 }

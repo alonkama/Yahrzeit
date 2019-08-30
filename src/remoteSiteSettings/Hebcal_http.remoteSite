@@ -2,5 +2,5 @@
 <RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
     <disableProtocolSecurity>true</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://www.hebcal.com</url>
+    <url>http://www.hebcal.com</url>
 </RemoteSiteSetting>

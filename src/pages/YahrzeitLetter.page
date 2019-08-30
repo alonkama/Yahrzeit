@@ -1,4 +1,4 @@
-<apex:page standardController="Deceased__c" extensions="UpdateYahrzeitController" renderAs="pdf"
+<apex:page standardController="Deceased__c" extensions="UpdateYahrzeitController"
            standardStylesheets="false" showHeader="false" sidebar="false"
            applyBodyTag="false" applyHtmlTag="false">
     

@@ -5,10 +5,11 @@ global with sharing class Yahrzeit {
 	// have to be done first, the values stored in memory, then update
 	// all the objects.
 	// See http://boards.developerforce.com/t5/Apex-Code-Development/Error-while-saving-external-web-service-response-to-salesforce/td-p/79560
-	public static void updateYahrzeitForDeceased(List<Deceased__c> deceasedList) {
+	public static List<Deceased__c> updateYahrzeitForDeceased(List<Deceased__c> deceasedList) {
 		// separated because the trigger needs to call the logic but not do the update.
         deceasedList = calculateHebrewDateAndFridayOfObservance(deceasedList);
         update deceasedList;
+        return deceasedList;
 	}
     
     private static List<Deceased__c> calculateHebrewDateAndFridayOfObservance(List<Deceased__c> deceasedList) {
@@ -38,7 +39,11 @@ global with sharing class Yahrzeit {
     private static Date getFridayOfObservance(Date observanceDate) {
         // Calculate days between the observance date and a known Friday (1/1/2016)
         Integer modValue = Math.mod(Date.newInstance(2016, 1, 1).daysBetween(observanceDate), 7);
-        Date fridayOfObservance = modValue > 0 ? observanceDate.addDays(7-modValue) : observanceDate;
+        // Rabbi Milder's instructions: https://drive.google.com/file/d/0B-cVQENnYKfObDVJbTllWDRGTVk/view?usp=sharing
+        // Names will be read on the next Shabbat following the date of the Yahrzeit.
+        // If the Yahrzeit occurs on Shabbat, the name will be read on that Shabbat.
+        // So Friday (mod=0) and Saturday (mod=1) will be this Friday. Sun-Thurs will be next Friday.
+        Date fridayOfObservance = modValue < 2 ? observanceDate.addDays(-modValue) : observanceDate.addDays(7-modValue);
         return fridayOfObservance;
     }
 	

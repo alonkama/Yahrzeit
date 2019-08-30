@@ -1,0 +1,27 @@
+<aura:component controller="UpdateYahrzeitController" 
+                implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="error" type="Boolean" />
+	<aura:attribute name="errorMessage" type="String" />
+    <aura:if isTrue="{!v.error}">
+      <!-- Load error -->
+      <div class="userCreateError">
+         <ui:message title="Error" severity="error" closable="true">
+            {!v.errorMessage}
+         </ui:message>
+      </div>
+   </aura:if>
+
+<!--    
+This is meant to hide the modal.
+<aura:html tag="style">
+    .slds-backdrop {
+    background: rgba(43, 40, 38, 0) !important;  
+    }
+    .slds-fade-in-open {
+    display:none !important;
+    }
+</aura:html>
+-->
+    
+</aura:component>
