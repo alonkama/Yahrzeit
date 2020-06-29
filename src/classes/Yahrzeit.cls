@@ -124,6 +124,23 @@ global with sharing class Yahrzeit {
 		JSONParser parser = System.Json.createParser(json);
 		while (parser.nextToken() != null) {
             if (parser.getCurrentToken() == JSONToken.FIELD_NAME) {
+                if (parser.getText() == 'error') {
+                    parser.nextToken();
+                    String errorMessage = parser.getText();
+//                    https://www.chabad.org/library/article_cdo/aid/1679830/jewish/Yahrtzeit-When-the-Date-Does-Not-Exist.htm
+                    if (errorMessage.startsWith('Hebrew day 30 out of valid range 1-29 for Kislev')) {
+                        hebrewMonth = 'Tevet';
+                        hebrewDay = '1';
+                    }
+                    else if (errorMessage.startsWith('Hebrew day 30 out of valid range 1-29 for Chesvan')) {
+                        hebrewMonth = 'Kislev';
+                        hebrewDay = '1';
+                    }
+                    else
+                        System.debug('Error: ' + errorMessage);
+                    return getDateBasedOnHebrew(hebrewMonth, hebrewDay, hebrewYear);
+                   
+                }
             	if (parser.getText() == 'gm') {
 	                // Get the value. 
     	            parser.nextToken();
