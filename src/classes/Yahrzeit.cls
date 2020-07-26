@@ -100,19 +100,29 @@ global with sharing class Yahrzeit {
 	}
     
     private static String getContent(String url) {
-		// Instantiate a new http object 
-            Http h = new Http();
-            
-            // Instantiate a new HTTP request, specify the method (GET) as well as the endpoint 
-            HttpRequest req = new HttpRequest();
-            req.setEndpoint(url);
-            req.setMethod('GET');
-            
-            // Send the request, and return a response 
-            HttpResponse res = h.send(req);
-            return res.getBody();
+        // Instantiate a new http object 
+        Http h = new Http();
+        
+        // Instantiate a new HTTP request, specify the method (GET) as well as the endpoint 
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint(url);
+        req.setMethod('GET');
+        
+        // Send the request, and return a response 
+        HttpResponse res = h.send(req);
+        if (res.getStatusCode() >= 200 && res.getStatusCode() < 300) {
+            // Everthing fine
+        } else {
+            throw new AuraHandledException('HTTP callout failed:'
+                                           + '\nendPoint=' + req.getEndPoint()
+                                           + '\nstatusCode=' + res.getStatusCode()
+                                           + '\nstatus=' + res.getStatus()
+                                           + '\nbody=' + res.getBody()
+                                          );
+        }
+        return res.getBody();
     }
-	
+    
 	private static Date getDateBasedOnHebrew(String hebrewMonth, String hebrewDay, Integer hebrewYear) {
 		String url = constructHebcalURL(hebrewMonth, hebrewDay, hebrewYear);
 		String json = getContent(url);
@@ -136,8 +146,9 @@ global with sharing class Yahrzeit {
                         hebrewMonth = 'Kislev';
                         hebrewDay = '1';
                     }
-                    else
-                        System.debug('Error: ' + errorMessage);
+                    else {
+            			throw new AuraHandledException(errorMessage);
+                    }
                     return getDateBasedOnHebrew(hebrewMonth, hebrewDay, hebrewYear);
                    
                 }
